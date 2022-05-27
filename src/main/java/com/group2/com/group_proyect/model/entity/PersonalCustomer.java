@@ -6,10 +6,9 @@ import javax.persistence.*;
 
 @Entity
 @Data
-//@PrimaryKeyJoinColumn(referencedColumnName = "bc_id")
-public class BussinesCustomer extends Customer {
+//@PrimaryKeyJoinColumn(name = "pc_id")
+public class PersonalCustomer extends Customer {
 
     @Column(name = "account", length = 10, nullable = false)
     private String account;
-
 }

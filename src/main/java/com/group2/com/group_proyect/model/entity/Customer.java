@@ -8,6 +8,7 @@ import java.util.Date;
 @Entity
 @Table(name = "customer")
 @Data
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,4 +34,5 @@ public class Customer {
 
     @Column(name = "phone", length = 9, nullable = false)
     private String phone;
+
 }
