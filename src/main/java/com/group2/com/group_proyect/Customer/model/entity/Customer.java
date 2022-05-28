@@ -1,6 +1,8 @@
 package com.group2.com.group_proyect.Customer.model.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -8,6 +10,8 @@ import java.util.Date;
 @Entity
 @Table(name = "customer")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Customer {
     @Id
@@ -27,6 +31,7 @@ public class Customer {
     private String address;
 
     @Column(name = "date_birth", nullable = false)
+    @Temporal(TemporalType.TIMESTAMP)
     private Date dateOfBirth;
 
     @Column(name = "email", length = 30, nullable = false)
@@ -34,5 +39,7 @@ public class Customer {
 
     @Column(name = "phone", length = 9, nullable = false)
     private String phone;
+
+
 
 }
