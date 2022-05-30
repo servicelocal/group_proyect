@@ -11,4 +11,6 @@ public class PersonalCustomer extends Customer {
 
     @Column(name = "account", length = 10, nullable = false)
     private String account;
+
+
 }

@@ -40,6 +40,14 @@ public class CustomerController {
         } else {
             return new ResponseEntity<Integer>(HttpStatus.BAD_REQUEST);
         }
+    }
+    @RequestMapping(value = "/customerId", method = RequestMethod.GET, produces = "application/json")
+    public Customer customerId(@RequestParam("id") Integer id) {
+    	if(customerService.customerId(id) != null) {
+    	    return customerService.customerId(id);
+    	} else {
+    		return null;
+    	}
     }*/
 
     @GetMapping("/id/{id}")

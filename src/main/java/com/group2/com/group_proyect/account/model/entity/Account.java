@@ -18,7 +18,9 @@ public class Account {
     private String number;
 
     @Column(name = "balance", nullable = false)
-    private Double balance;
+    private Double balance; //monto acumulado
+
+
 
     /*@ManyToOne
     @JoinColumn(name = "customer_id")

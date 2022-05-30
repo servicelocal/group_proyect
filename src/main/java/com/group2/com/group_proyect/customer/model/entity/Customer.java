@@ -40,6 +40,4 @@ public class Customer {
     @Column(name = "phone", length = 9, nullable = false)
     private String phone;
 
-
-
 }
