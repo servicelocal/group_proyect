@@ -16,8 +16,8 @@ public class GroupProyectApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Date d = new Date(2010, 10, 10, 20, 10, 00);
-		Customer c = new Customer(1, "32156478", "Juan", "López", "av siemore viva", d, "viva@gmail.com", "321456789");
+		/*Date d = new Date(2010, 10, 10, 20, 10, 00);
+		Customer c = new Customer(1, "32156478", "Juan", "López", "av siemore viva", d, "viva@gmail.com", "321456789");*/
 
 	}
 }
