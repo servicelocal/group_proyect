@@ -18,18 +18,19 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @GetMapping("/listCustomer")
-//    @RequestMapping(value = "/listCustomer", method = RequestMethod.GET)
+    @GetMapping("/list")
     public List<Customer> listAll() {
         return customerService.listAll();
     }
 
-    @RequestMapping(value = "/saveCustomer", method = RequestMethod.POST)
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
     public ResponseEntity<Integer> saveCustomer(@RequestBody Customer customer) {
         customerService.saveCustomer(customer);
         return new ResponseEntity<Integer>(HttpStatus.OK);
     }
 
+    /*
+    //postman:localhost:8081/customer/customerId/?id=65
     @RequestMapping(value = "/customerId", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<Integer> customerId(@RequestParam("id") Integer id) {
         Optional<Customer> customerRepository = customerService.customerId(id);
@@ -37,8 +38,13 @@ public class CustomerController {
             customerService.customerId(id);
             return new ResponseEntity<Integer>(HttpStatus.OK);
         } else {
-            return new ResponseEntity<Integer>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<Integer>(HttpStatus.BAD_REQUEST);
         }
+    }*/
+
+    @GetMapping("/id/{id}")
+    public Optional<Customer> cutomerId(@PathVariable("id") Integer id) {
+        return customerService.customerId(id);
     }
 
 }
