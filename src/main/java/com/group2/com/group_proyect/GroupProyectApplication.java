@@ -1,11 +1,8 @@
 package com.group2.com.group_proyect;
 
-import com.group2.com.group_proyect.Customer.model.entity.Customer;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.Date;
 
 @SpringBootApplication
 public class GroupProyectApplication implements CommandLineRunner {

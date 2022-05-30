@@ -1,6 +1,6 @@
-package com.group2.com.group_proyect.Customer.model.repository;
+package com.group2.com.group_proyect.customer.model.repository;
 
-import com.group2.com.group_proyect.Customer.model.entity.Customer;
+import com.group2.com.group_proyect.customer.model.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

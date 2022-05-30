@@ -1,4 +1,4 @@
-package com.group2.com.group_proyect.Customer.model.entity;
+package com.group2.com.group_proyect.customer.model.entity;
 
 import lombok.Data;
 

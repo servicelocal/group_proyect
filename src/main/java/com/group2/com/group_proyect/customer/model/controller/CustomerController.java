@@ -1,8 +1,8 @@
-package com.group2.com.group_proyect.Customer.model.controller;
+package com.group2.com.group_proyect.customer.model.controller;
 
 
-import com.group2.com.group_proyect.Customer.model.entity.Customer;
-import com.group2.com.group_proyect.Customer.model.service.CustomerService;
+import com.group2.com.group_proyect.customer.model.entity.Customer;
+import com.group2.com.group_proyect.customer.model.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

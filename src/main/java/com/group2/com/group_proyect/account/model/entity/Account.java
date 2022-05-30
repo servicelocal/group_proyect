@@ -1,6 +1,5 @@
 package com.group2.com.group_proyect.account.model.entity;
 
-import com.group2.com.group_proyect.Customer.model.entity.Customer;
 import lombok.Data;
 
 import javax.persistence.*;
