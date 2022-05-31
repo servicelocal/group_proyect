@@ -20,8 +20,6 @@ public class Account {
     @Column(name = "balance", nullable = false)
     private Double balance; //monto acumulado
 
-
-
     /*@ManyToOne
     @JoinColumn(name = "customer_id")
     private Customer customer;*/

@@ -13,7 +13,7 @@ public class BusinessCreditCard extends CreditCard {
     private String account;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "buiness_customer_id")
+    @JoinColumn(name = "business_customer_id")
     private BusinessCustomer businessCustomer;
 
 }

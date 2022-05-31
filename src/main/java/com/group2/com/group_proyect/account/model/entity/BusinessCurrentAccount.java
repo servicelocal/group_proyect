@@ -12,6 +12,9 @@ public class BusinessCurrentAccount extends Account {
     @Column(name = "commission", nullable = false, columnDefinition = "tinyint")
     private Integer commission; //comisión por mentenimiento
 
+    /*@Column(name = "signers", nullable = false)
+    private Boolean signers; //0+ firmantes autorizados*/
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "business_customer_id")
     private BusinessCustomer businessCustomer;
