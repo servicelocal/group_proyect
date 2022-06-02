@@ -22,5 +22,5 @@ public class Transaction {
     private Account account;*/
 
     //funcion createTransaction(Double amount)
-    public void createTransact(Double amount, Boolean typeTransact) {}
+	 public void createTransact(Double amount, Boolean typeTransact) {}
 }

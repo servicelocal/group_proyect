@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CreditCard extends Account {
+public class CreditCard  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,10 +24,12 @@ public class CreditCard extends Account {
     @Column(name = "pin", length = 4, nullable = false)
     private String pin;
 
-    @Column(name = "limit_credit", nullable = false)
+    @Column(name = "limit_credit", nullable = false) //700, 
     private Integer limitCredit; //limite de crédito
 
-    @Column(name = "remaining_credit", nullable = false)
+    @Column(name = "remaining_credit", nullable = false) //700, 
     private Double remainingCredit; //crédito restante
-
+    
+    /*id de cliente business, obtenido de BussinessClient Entity(ManyToOne)
+     */
 }
