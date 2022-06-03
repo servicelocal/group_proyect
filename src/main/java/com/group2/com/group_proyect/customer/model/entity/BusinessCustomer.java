@@ -1,6 +1,5 @@
 package com.group2.com.group_proyect.customer.model.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -10,7 +9,6 @@ import java.util.Date;
 
 @Entity
 @Data
-//@AllArgsConstructor
 @NoArgsConstructor
 //@PrimaryKeyJoinColumn(referencedColumnName = "bc_id")
 public class BusinessCustomer extends Customer {

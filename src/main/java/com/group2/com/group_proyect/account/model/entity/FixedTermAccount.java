@@ -4,7 +4,6 @@ import com.group2.com.group_proyect.customer.model.entity.PersonalCustomer;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
 @Data
