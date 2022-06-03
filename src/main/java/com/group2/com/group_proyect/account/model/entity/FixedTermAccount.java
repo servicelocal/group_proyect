@@ -10,7 +10,7 @@ import java.util.Date;
 @Data
 public class FixedTermAccount extends Account {
 
-    @Column(name = "day", length = 2, nullable = false, columnDefinition = "tinyiny")
+    @Column(name = "day", length = 2, nullable = false, columnDefinition = "tinyint")
     private Integer day; //retiro o depósito en una dia específico del mes
 
     @OneToOne(fetch = FetchType.LAZY)

@@ -16,17 +16,20 @@ public class CreditCardServiceImp implements CreditCardService {
     CreditCardRepository creditCardRepository;
 
     @Override
-    public CreditCard saveCreditCard(CreditCard creditCard) {
-        return creditCardRepository.save(creditCard);
+    public Optional<CreditCard> forId(Integer id) {
+        return creditCardRepository.findById(id);
     }
 
     @Override
-    public List<CreditCard> listAll() {
+    public List<CreditCard> list() {
         return creditCardRepository.findAll();
     }
 
     @Override
-    public Optional<CreditCard> creditCardId(Integer id) {
-        return creditCardRepository.findById(id);
+    public CreditCard saveCreditCard(CreditCard creditCard) {
+        return creditCardRepository.save(creditCard);
     }
+
+
+
 }

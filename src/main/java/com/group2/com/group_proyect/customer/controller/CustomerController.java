@@ -1,4 +1,4 @@
-package com.group2.com.group_proyect.customer.model.controller;
+package com.group2.com.group_proyect.customer.controller;
 
 
 import com.group2.com.group_proyect.customer.model.entity.Customer;

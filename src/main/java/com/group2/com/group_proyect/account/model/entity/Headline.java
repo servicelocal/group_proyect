@@ -7,8 +7,12 @@ import javax.persistence.*;
 @Entity
 @Data
 public class Headline extends BusinessCurrentAccount {
-    //1+ titulares
-    private String titular;
+
+    @Column(name = "titular", length = 30, nullable = false)
+    private String titular; //1+ titulares
+
+    @Column(name = "signers", nullable = false)
+    private Boolean signers; //0+ firmantes autorizados
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "business_current_account_id")

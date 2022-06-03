@@ -1,4 +1,4 @@
-package com.group2.com.group_proyect.creditcard.model.controller;
+package com.group2.com.group_proyect.creditcard.controller;
 
 import com.group2.com.group_proyect.creditcard.model.entity.CreditCard;
 import com.group2.com.group_proyect.creditcard.model.service.CreditCardService;
@@ -11,15 +11,20 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/creditcard")
+@RequestMapping("/credit_card")
 public class CreditCardController {
 
     @Autowired
     CreditCardService creditCardService;
 
+    @GetMapping("/{id}")
+    public Optional<CreditCard> forId(@PathVariable("id") Integer id) {
+        return creditCardService.forId(id);
+    }
+
     @GetMapping()
-    public List<CreditCard> listAll() {
-        return creditCardService.listAll();
+    public List<CreditCard> list() {
+        return creditCardService.list();
     }
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)
@@ -27,10 +32,4 @@ public class CreditCardController {
         creditCardService.saveCreditCard(creditCard);
         return new ResponseEntity<Integer>(HttpStatus.OK);
     }
-
-    @GetMapping("/id/{id}")
-    public Optional<CreditCard> creditCardId(@PathVariable("id") Integer id) {
-        return creditCardService.creditCardId(id);
-    }
-
 }

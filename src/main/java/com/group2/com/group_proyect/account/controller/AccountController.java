@@ -1,4 +1,4 @@
-package com.group2.com.group_proyect.account.model.controller;
+package com.group2.com.group_proyect.account.controller;
 
 import com.group2.com.group_proyect.account.model.entity.Account;
 import com.group2.com.group_proyect.account.model.service.AccountService;

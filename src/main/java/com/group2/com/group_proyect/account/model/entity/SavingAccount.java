@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Data
 public class SavingAccount extends Account {
 
-    @Column(name = "max_num_movements", nullable = false, columnDefinition = "tinyiny")
+    @Column(name = "max_num_movements", nullable = false, columnDefinition = "tinyint")
     private Integer maxNumMovements; //límite máximo de movimientos mensuales
 
     @OneToOne(fetch = FetchType.LAZY)
