@@ -15,7 +15,4 @@ public interface CreditCardService {
 
     public CreditCard saveCreditCard(CreditCard creditCard);
 
-    public List<CreditCard> listAll();
-
-    public Optional<CreditCard> creditCardId(Integer id);
 }

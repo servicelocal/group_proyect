@@ -1,5 +1,7 @@
 package com.group2.com.group_proyect.account.model.repository;
 
-public class Transacts_AccountRepo {
+import org.springframework.stereotype.Repository;
 
+@Repository
+public interface Transacts_AccountRepo {
 }
