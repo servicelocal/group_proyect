@@ -3,8 +3,6 @@ package com.group2.com.group_proyect.customer.model.entity;
 import lombok.Data;
 
 import javax.persistence.*;
-import com.group2.com.group_proyect.account.model.entity.BusinessCurrentAccount;
-import java.util.List;
 
 @Entity
 @Data
